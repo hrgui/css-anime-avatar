@@ -1,0 +1,155 @@
+body {
+  font-family: sans-serif;
+}
+
+.nose {
+  width: 5px;
+  height: 5px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  left: 45%;
+  top: 200px;
+}
+
+.mouth {
+  width: 65px;
+  height: 25px;
+  border: solid 3px #000;
+  border-color: #000 transparent transparent transparent;
+  border-radius: 50%/20px 20px 0 0;
+  position: absolute;
+  left: 36%;
+  top: 220px;
+  transform: rotate(165deg);
+}
+
+.eyebrow {
+  width: 88px;
+  height: 25px;
+  border: solid 3px #000;
+  border-color: #000 transparent transparent transparent;
+  border-radius: 50%/25px 25px 0 0;
+}
+
+.leftEyebrow {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+}
+
+.rightEyebrow {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+.head {
+  background: #f8d9b2;
+  width: 300px;
+  height: 307px;
+  border-radius: 50% 50% 390px 390px;
+  position: absolute;
+}
+
+.shadow {
+  position: absolute;
+  width: 138px;
+  height: 20px;
+  z-index: 0;
+  background: #d0d6dc;
+  border-radius: 50% 10px 0 0;
+}
+
+.pupil {
+  background: #223035;
+  border-radius: 50%;
+  height: 73px;
+  width: 44px;
+  position: relative;
+  z-index: 1;
+}
+
+.eye {
+  background: #fff;
+  width: 84px;
+  height: 70px;
+  overflow: hidden;
+  border-top-left-radius: 70% 40%;
+  border-top-right-radius: 70% 40%;
+  border-bottom-left-radius: 70% 100%;
+  border-bottom-right-radius: 70% 100%;
+}
+
+.leftEye {
+  position: absolute;
+  left: 40px;
+  top: 100px;
+  width: 72px;
+  height: 74px;
+  box-shadow: -3px -9px 0 1px, 1px -9px 0 1px, -15px -10px 0 -7px;
+}
+
+.rightEye {
+  position: absolute;
+  right: 60px;
+  top: 100px;
+  width: 84px;
+  height: 70px;
+  box-shadow: 3px -9px 0 1px, 1px -9px 0 1px, 15px -10px 0 -7px;
+}
+
+.leftPupil {
+  position: absolute;
+  right: 5px;
+}
+
+.rightPupil {
+  height: 73px;
+  width: 52px;
+  left: 5px;
+  bottom: 0px;
+  position: absolute;
+}
+
+.pupil > .highlight {
+  background: #fff;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  z-index: 3;
+}
+
+.pupil > .highlightMiddle {
+  background: #61b9a8;
+  width: 10px;
+  height: 16px;
+  position: absolute;
+  top: 35%;
+  left: 36%;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.pupil > .highlightBottom {
+  background: #54a59b;
+  border-radius: 50%;
+  width: 34px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.highlightBottom > .highlightBottomInner {
+  background: #223035;
+  border-radius: 50%;
+  width: 34px;
+  height: 85%;
+  position: absolute;
+  bottom: 10px;
+}
